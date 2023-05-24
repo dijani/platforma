@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curs de lecții C/C++</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo.png">
+    
+    <!-- conectarea firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="">
+            <img class="logo" src="images/logo.png" />
+        </a>
+
+        <navbar id="navbar">
+            <a href="index.html">Home</a>
+            <a href="pages/teme.html">Module/Teme</a>
+            <a id="postare-btn" href="pages/creare.html" class="header-btn">Creare <i class="fas fa-plus"></i></a>
+        </navbar>
+
+        <span class="hamburger-menu" onclick="mobileMenu()"><i class="fa fa-bars" aria-hidden="true"></i></span>
+    </header>
+
+
+    <main>
+        <section id="index-section">
+            <div class="main-content">
+                <h1>Curs de Informatica</h1>
+                <h2>LT "Liviu Damian"</h2>
+            </div>
+            <a class="studiaza-btn" href="pages/teme.html">
+                Vezi temele <i class="fas fa-book studiaza-icon"></i>
+            </a>
+        </section>
+
+        <section class="centered">
+            <h1>Diacova Janna</h1>
+            <span>Profesorul cursului</span> <br/> <br/>
+            <img class="img-profesor" src="images/eu.jpg">
+
+            <p>
+                Site-ul dat a fost creat cu scopul de a încuraja elevii să 
+                studieze informatica ca obiect.
+                Elevii vor putea consulta platforma în timpul liber sau să revină la careva
+                teme care nu au fost clare pe parcursul lecției sau teme absentate.
+                Platforma este deschisă pentru toți elevii și poate fi utilizată atât cât de pe
+                calculator de masă, laptop cât și dispozitiv mobil.
+                Temele/Modulele sunt împărțite pe clase. Succese tuturor elevilor!
+                Pagina cu teme poate fi accesată <a href="pages/teme.html">AICI.</a> 
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        LT Liviu Damian &nbsp;
+        <div id="year"> </div>
+        <a href="pages/admin.html"><img id="adm" src="images/admin.png"></a>
+    </footer>
+</body>
+
+</html>

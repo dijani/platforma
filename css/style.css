@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat&display=swap');
+
+:root {
+    --text: #242424;
+    --secondary: #269adc;
+    --primary: white;
+    --primarybg: white;
+    --secondarybg: #1e6188;
+}
+
+body {
+    margin: 0;
+    display: none;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    font-family: Montserrat;
+    color: var(--text);
+}
+
+header {
+    overflow: auto;
+    background: rgba(134, 134, 134, 60%);
+    padding-right: 7%;
+    padding-left: 2.2%;
+    position: fixed;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    z-index: 3;
+	min-height: 65px;
+}
+
+.header-btn {
+    background-color: rgb(24, 141, 24);
+    padding:4px 5px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    border: 1px solid lightgray;
+    color: var(--primary);
+    margin-left: 15px;
+    cursor: pointer;
+    margin-left: 5px !important;
+    float:right;
+}
+
+#postare-btn {
+    display: none;
+}
+
+a {
+    text-decoration: none !important;
+    font-weight: bold;
+}
+
+p {
+    line-height: 150%;
+}
+
+navbar {
+    float:right;
+    font-family: Kanit;
+    padding: 15px 0px;
+}
+
+navbar a {
+    color: var(--primary);
+    display: inline-block;
+    margin: 0px 10px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+navbar a:hover {
+    color: var(--secondary);
+}
+
+.hamburger-menu {
+    display: none !important;
+    font-size: 1.7rem !important;
+    position: absolute;
+    right: 17px;
+    top: 15px;
+    cursor: pointer;
+    color: var(--primary)
+}
+
+.gray-btn {
+    background-color: gray;
+}
+
+.logo {
+    max-height: 45px;
+    margin-top: 9px;
+}
+
+main {
+    min-height: 100vh;
+}
+
+.main-content {
+    text-align: center;
+    color: white;
+    font-family: kanit;
+    text-align: center;
+    font-size: 1.4rem;
+    background:rgba(134, 134, 134, 25%);
+    backdrop-filter: blur(5px);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.studiaza-btn {
+    text-align: center;
+    color: white;
+    font-family: kanit;
+    text-align: center;
+    font-size: 1.1rem;
+    background:rgba(87, 210, 56, 0.479);
+    backdrop-filter: blur(5px);
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 35px;
+    
+}
+
+.studiaza-icon {
+    font-size: 1rem;
+}
+
+.main-content h1 {
+    font-size: 1.4rem;
+}
+
+.main-content h2 {
+    font-size: 1.3rem;
+}
+
+.main-content h3 {
+    font-size: 1.2rem;
+}
+
+#index-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)), url("../images/index.jpg");
+    height: 50vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 0px !important;
+    min-height: 390px;
+}
+
+section {
+    padding: 15px 15% 60px 15%;
+}
+
+main > section:first-of-type {
+    padding-top: 80px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.module {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 20px;
+    position: relative;
+}
+
+.modul {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    display: block;
+    transition: all 0.2s;
+    text-decoration: none;
+    color: var(--text);
+    padding-bottom: 15px;
+    position: relative;
+    height: 170px;
+    margin: 5px;
+}
+
+.clase details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 12px 12px 4px;
+    margin-bottom: 20px;
+}
+
+.clase summary {
+    margin: -12px  -12px 0;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.clase details[open] {
+    padding: 12px;
+}
+
+.clase details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 12px;
+}
+
+.modul-titlu {
+    padding: 0px 15px;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(39, 39, 39, 0.791);
+    color:white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: filter 1s;
+}
+
+.modul > img {
+    width: 100%;
+    height: 168px;
+    object-fit: cover;
+    border-radius: 15px;
+
+}
+
+.modul:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    filter: contrast(105%);
+    transform: translateY(-2px);
+}
+
+.modul:hover .modul-titlu {
+    filter: contrast(110%);
+}
+
+.img-profesor {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+#postare-section{
+    min-height: 100vh;
+}
+
+footer {
+    min-height: 80px;
+    background-color: var(--secondarybg);
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    width: 50px;
+}
+
+#adm {
+    width: 60%;
+    margin-left: 15px;
+}
+
+.tema-full {
+    padding: 15px 20px 30px 20px;
+    border: 1px solid lightgray;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.tema-full img {
+    max-width: 100%;
+}
+
+.tema-titlu-full {
+    background: radial-gradient(#000000d8, #00000060);
+    height: 200px;
+    position: relative;
+}
+
+.tema-titlu-full img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    position: relative;
+    z-index: -1;
+}
+
+.tema-titlu-full h1 {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.6rem;
+}
+
+.breadcrumb {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.breadcrumb a {
+    color:#616161;
+}
+.breadcrumb a:hover {
+    text-decoration: underline !important;
+}
+
+#creare-section {
+    min-height: 100vh;
+}
+
+.tema-form {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    max-width: 950px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 0px 10% 35px 10%;
+}
+
+.tema-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.05rem;
+}
+
+.tema-form input, .tema-form textarea, .tema-form select  {
+    outline: none;
+    padding: 7px 12px;
+    border-radius: 5px;
+    font-family: inherit;
+    border: 2px solid lightgray;
+    width: 60%;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 15px;
+    resize: none;
+    width: 100%;
+}
+
+#creare-btn {
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.ck-editor__editable[role="textbox"] {
+    /* editing area */
+    min-height: 50vh;
+    margin-bottom: 30px;
+}
+
+.admin-btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    border: 2px solid green;
+    cursor: pointer;
+    width: 150px;
+}
+
+#login-btn {
+    background:#2eaa0f;
+}
+
+#logout-btn {
+    background: #9a9a9a;
+}
+
+.delete, .edit {
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    color: white;
+}
+
+.delete {
+    top: 10px;
+    right: 15px;
+}
+
+.edit {
+    top: 10px;
+    right: 45px;
+}
+
+@media(max-width: 768px) {
+    html {
+        font-size: 17px;
+    }
+    
+    section {
+        padding: 10px 10px 60px 10px;
+    }
+
+    header {
+        padding-right: 5px;
+        padding-bottom: 5px;
+    }
+
+    navbar {
+        float:none;
+        display: none;
+    }
+
+    navbar.mobile {
+        display: block;
+    }
+
+    navbar a{
+        display: none;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    navbar.mobile a {
+        float:none;
+        display: block;
+        text-align: center;
+    }
+
+    .hamburger-menu {
+        display: block !important;
+    }
+
+    .header-btn {
+        max-width: 100px;
+        margin-left: auto !important;
+        margin-right: auto;
+    }
+}
